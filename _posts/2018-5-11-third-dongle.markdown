@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "thirddongle"
+title:  "third dongle"
 date:   2018-05-11 13:30:49 -0700
 categories: jekyll update
 ---
