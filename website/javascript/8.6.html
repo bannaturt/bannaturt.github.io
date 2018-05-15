@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript">	
+	function dice() {
+		var r = Math.random();
+		if( r < 0.33 ) {
+			return "ROCK";
+		} else if (r < .66) {
+			return "PAPER";
+		}
+		else {
+			return "SCISSORS";
+		}
+	}
+	
+	function compare(user) {
+		userChoice = user.toUpperCase();
+		
+	var computerChoice =  dice();
+		alert("user chose: " + userChoice);
+		alert("computer chose: " + computerChoice);
+	
+	if(userChoice == computerChoice) {
+		alert("its a tie");
+	}
+	else if(userChoice == "ROCK") {
+		if(computerChoice == "PAPER") {
+			alert("the computer won because it used paper!!");
+		}
+		else {
+			alert("YOU WON because the computer chose scissors");
+		}
+	}
+	else if(userChoice == "PAPER") {
+		if(computerChoice == "SCISSORS") {
+			alert("The computer won because it used Scissors!");
+		}
+		else {
+			alert("YOU WON because the computer used rock");
+		}
+	}
+	else if(userChoice == "SCISSORS") {
+		if(computerChoice == "ROCK") {
+			alert("the computer won because it used rock");
+		}
+		else {
+			alert("YOU WON becuase the computer used paper");
+		}
+}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+var u = prompt("rock paper scissors?\n");
+compare(u);
+</script>
+</body>
+</html>

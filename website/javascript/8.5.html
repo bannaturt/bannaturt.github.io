@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+
+	function dice() {
+		return Math.ceil(Math.random()*6);
+	}
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+var one = 0;
+var two = 0;
+var three = 0;
+var four = 0;
+var five = 0;
+var six = 0;
+
+
+for( var i = 1; i <= 100; i++) {
+	var roll = dice();
+	if(roll == 1) {
+		one++;
+	}
+	else if(roll == 2) {
+		two++;
+	}
+	else if(roll == 3) {
+		three++;
+	}
+	else if(roll == 4) {
+		four++;
+	}
+	else if(roll == 5) {
+		five++;
+	}
+	else if(roll == 6) {
+		six++;
+	}
+}
+document.write("times you rolled a six: " + six + "<br>times you rolled a five: " + five + "<br>times you rolled a four: " + four + "<br>times you rolled a three: " + three + "<br>times you rolled a two: " + two + "<br>times you rolled a one: " + one + "<br>total rolls: " + (one+two+three+four+five+six)); 
+</script>
+</body>
+</html>
